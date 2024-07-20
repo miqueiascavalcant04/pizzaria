@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Pizzaria Delícia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #d9534f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5bc0de;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #d9534f;
+            color: white;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Carrinho de Compras</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="pedidos.html">Fazer Pedido</a>
+        <a href="admin.html">Área Administrativa</a>
+        <a href="carrinho.html">Carrinho de Compras</a>
+    </nav>
+    <div class="container">
+        <h2>Seus Itens</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome da Pizza</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pizza Margherita</td>
+                    <td>1</td>
+                    <td>R$ 35,00</td>
+                    <td>R$ 35,00</td>
+                    <td>
+                        <a href="#" class="btn">Remover</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pizza Calabresa</td>
+                    <td>2</td>
+                    <td>R$ 40,00</td>
+                    <td>R$ 80,00</td>
+                    <td>
+                        <a href="#" class="btn">Remover</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pizza Quatro Queijos</td>
+                    <td>1</td>
+                    <td>R$ 45,00</td>
+                    <td>R$ 45,00</td>
+                    <td>
+                        <a href="#" class="btn">Remover</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total">
+            <h3>Total: R$ 160,00</h3>
+        </div>
+        <a href="pedido.html" class="btn">Finalizar Pedido</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Pizzaria Delícia. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

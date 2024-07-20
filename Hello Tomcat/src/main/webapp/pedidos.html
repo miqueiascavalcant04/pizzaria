@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pedido - Bib'Zzaria Delícia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #d9534f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5bc0de;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .order-form {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .order-form input, .order-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .order-form button {
+            padding: 15px 30px;
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .order-form button:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faça Seu Pedido</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="pedidos.html">Fazer Pedido</a>
+        <a href="adm.html">Área Administrativa</a>
+        <a href="carrinho.html">Carrinho de Compras</a>
+    </nav>
+    <div class="container">
+        <form class="order-form">
+            <h3>Informações do Pedido</h3>
+            <input type="text" name="nome" placeholder="Nome Completo" required>
+            <input type="tel" name="telefone" placeholder="Telefone" required>
+            <input type="text" name="endereco" placeholder="Endereço de Entrega" required>
+            <select name="pizza" required>
+                <option value="">Selecione uma Pizza</option>
+                <option value="margherita">Pizza Margherita - R$ 35,00</option>
+                <option value="calabresa">Pizza Calabresa - R$ 40,00</option>
+                <option value="quatro-queijos">Pizza Quatro Queijos - R$ 45,00</option>
+            </select>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Pizzaria Delícia. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

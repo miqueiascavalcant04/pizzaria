@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Pizzaria Delícia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #d9534f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5bc0de;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .menu-item {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nosso Menu</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="pedidos.html">Fazer Pedido</a>
+        <a href="adm.html">Área Administrativa</a>
+        <a href="carrinho.html">Carrinho</a>
+    </nav>
+    <div class="container">
+        <div class="menu-item">
+            <h3>Pizza Margherita</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSySDFaNS6lbDi4xR24dG_S1XjuTYRzQo5wGw&usqp=CAU" width="300" height="300" alt="Pizza Margherita">
+            <p>Queijo mozzarella, tomate e manjericão fresco.</p>
+            <p><strong>Preço: R$ 35,00</strong></p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Calabresa</h3>
+            <img src="https://prezunic.vtexassets.com/arquivos/ids/199026-800-auto?v=638370492393570000&width=800&height=auto&aspect=true" width="300" height="300" alt="Pizza Calabresa">
+            <p>Calabresa fatiada, cebola e azeitonas.</p>
+            <p><strong>Preço: R$ 40,00</strong></p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Quatro Queijos</h3>
+            <img src="https://img.freepik.com/fotos-premium/pizza-de-queijo-isolada-em-imagens-de-ilustracao-de-fundo-branco_796580-849.jpg" alt="Pizza Quatro Queijos" width="300" height="300">
+            <p>Mozzarella, provolone, gorgonzola e parmesão.</p>
+            <p><strong>Preço: R$ 45,00</strong></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Bib'Zzaria. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

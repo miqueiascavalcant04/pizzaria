@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bib'Zzaria </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: rgb(255, 128, 0);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5bc0de;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .menu-button, .order-button {
+            padding: 15px 30px;
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .menu-button:hover, .order-button:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bib'Zzaria</h1>
+    </header>
+    <nav>
+        <a href="adm.html">Área Administrativa</a>
+    </nav>
+    <div class="container" id="home">
+        <h2>Bem-vindo à Bib'Zzaria</h2>
+        <p>Venha experimentar as melhores pizzas da cidade!</p>
+        <a href="menu.html" class="menu-button">Veja Nosso Menu</a>
+        <a href="pedidos.html" class="order-button">Fazer Pedido</a>
+        <a href="carrinho.html" class="order-button">Carrinho</a>
+    </div>
+    <div class="container" id="contato">
+        <h2>Contato</h2>
+        <p>Email: miqueiascavalcante417@gmail.com</p>
+        <p>Telefone: (92)98215-8707</p>
+    </div>
+    <div class="container" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A Bib'Zzaria é dedicada a oferecer as melhores pizzas, feitas com ingredientes frescos e de alta qualidade. Nossa missão é proporcionar uma experiência gastronômica inesquecível para nossos clientes.</p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Pizzaria Delícia. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
